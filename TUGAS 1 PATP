@@ -1,0 +1,73 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int n, jumlah = 0;
+
+    printf("Masukan rentang bilang yg ingin di jumlah : ");
+
+    scanf("%i", &n);
+
+    for(int x = 1; x <= n; x++)
+
+    {
+
+         printf("%x", x);
+
+         if(x != n) printf(" + ");
+
+         jumlah += x;
+
+    }
+
+    printf("\nJumlah : %i", jumlah);
+
+    return 0;
+
+}
+
+==========================================================================================================================================
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+    int a = 1 ,b = 1,n,barisan,deret;
+    
+    cout <<"Masukan suku ke n :";
+    cin >> n;
+    
+    deret=(2*a+(n-1)*b)*n/2;
+    
+    cout <<"Jumlah"<<deret;
+
+}
+
+==============================================================================================================================================
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+    int a,b,n,barisan,deret;
+    cout <<"Masukan suku pertama(a) :";
+    cin >> a;
+    
+    cout <<"Masukan beda suku(b) :";
+    cin >> b;
+    
+    cout <<"Masukan suku ke n :";
+    cin >> n;
+    
+    deret=(2*a+(n-1)*b)*n/2;
+    
+    cout <<"Jumlah"<<deret;
+
+}
+
